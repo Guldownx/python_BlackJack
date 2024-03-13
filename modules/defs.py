@@ -49,6 +49,3 @@ def points_counter() -> int:
         counter += cur_hit
         yield counter
 
-
-if __name__ == '__main__':
-    print_dealer_overcapped()
