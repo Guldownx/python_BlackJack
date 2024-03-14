@@ -1,6 +1,7 @@
 from modules.imports import *
 
 
+
 def print_hit_hold() -> None:
     print('-' * 26)
     print('hit   | Бросить кости')
@@ -42,7 +43,7 @@ def hit() -> int:
     return randint(1, 11)
 
 
-def points_counter() -> int:
+def points_counter() -> Generator[int, None, None]:
     counter = 0
     while True:
         cur_hit = hit()
